@@ -36,44 +36,6 @@ h6 {
     font-weight: 700;
 }
 
-hr.star-light,
-hr.star-primary {
-    margin: 25px auto 30px;
-    padding: 0;
-    max-width: 250px;
-    border: 0;
-    border-top: solid 5px;
-    text-align: center;
-}
-
-hr.star-light:after,
-hr.star-primary:after {
-    content: "\f005";
-    display: inline-block;
-    position: relative;
-    top: -.8em;
-    padding: 0 .25em;
-    font-family: FontAwesome;
-    font-size: 2em;
-}
-
-hr.star-light {
-    border-color: #fff;
-}
-
-hr.star-light:after {
-    color: #fff;
-    background-color: #18bc9c;
-}
-
-hr.star-primary {
-    border-color: #2c3e50;
-}
-
-hr.star-primary:after {
-    color: #2c3e50;
-    background-color: #fff;
-}
 
 .img-centered {
     margin: 0 auto;
@@ -84,6 +46,7 @@ header {
     color: #fff;
     background-image:url(../img/valley_v2.png);
     height: 100vh;
+	background-size: cover;
 }
 
 header .container {
@@ -107,7 +70,7 @@ header .intro-text .name {
     font-size: 1em;
     font-weight: 600;
     color: #c1bfc1;
-    margin-left: 7%;
+    margin-left: 6%;
 }
 
 header .intro-text .nom{
@@ -125,7 +88,7 @@ header .intro-text .sub-name{        /* Positionnement du poste */
     font-size: 2em;
     font-weight: 600;
     color: #fec11d;
-    margin-left: 7%;
+    margin-left: 6%;
 }
 
 header .intro-text .skills {
@@ -134,8 +97,8 @@ header .intro-text .skills {
 }
 
 .bouton-rouge{    
-    margin-top: 280px;
-    margin-left: 2.5%;
+    margin-top: 23.9%;
+    margin-left: 1%;
 }
 
 .bouton-rouge a img{
@@ -155,22 +118,23 @@ header .intro-text .skills {
     header .intro-text .skills {
         font-size: 1.75em;
     }
+ 
 }
 
 @media(min-width:768px) {
     .navbar-fixed-top {
         padding: 25px 0;
-       /* -webkit-transition: padding .3s;
+        -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
-        transition: padding .3s;*/
+        transition: padding .3s;
     }
 
-   /* .navbar-fixed-top .navbar-brand {
+    .navbar-fixed-top .navbar-brand {
         font-size: 2em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
-    } */
+    } 
 
     .navbar-fixed-top.navbar-shrink {
         padding: 25px 0;
@@ -180,6 +144,10 @@ header .intro-text .skills {
         font-size: 1.5em;
         
     }
+    .competences{
+        height: 300vh;
+    }
+
 }
 
 .navbar-brand{
@@ -239,7 +207,7 @@ header .intro-text .skills {
 .presentation_img{
     text-align: center;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 13%;
 }
 
 .presentation .container .row .text-center {
@@ -256,6 +224,63 @@ header .intro-text .skills {
     height: 40vh;
     color: white;
     text-align: center;
+}
+
+/* POUR ASSURER LA COMPATIBILITE SUR FIREFOX */
+
+@-moz-document url-prefix()
+{
+	
+   .nom_prenom{
+	   margin-left: 0;
+   }
+   header .intro-text .name {
+    display: block;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 4em;
+    font-weight: 600;
+    color: #c1bfc1;
+    margin-left: 4%;
+	margin-top: -2%;
+}
+
+header .intro-text .sub-name{        /* Positionnement du poste */
+    display: block;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    color: #fec11d;
+    margin-left: 4%;
+}
+   .bouton-rouge{    
+    margin-top: 14%;
+    margin-left: 1%;
+}
+
+.presentation{
+	height: 170%;
+	margin-bottom: 5%;
+}
+.presentation_img{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.competences{
+	height: 170%;
+	
+}
+#portfolio{
+	height: 200%;
+	margin-bottom:18%;
+}
+
+.contact{
+	margin-bottom: 0%;
+}
 }
 
 
@@ -277,6 +302,7 @@ header .intro-text .skills {
     background-color: #22313f;
     height: 100vh;
     z-index: 0;
+	background-size: cover;
 }
 
 .competences p{
@@ -491,6 +517,7 @@ form .row .floating-label-form-group {
 
 footer {
     color: #fff;
+     background-color: #22313f;
 }
 
 footer h3 {
@@ -499,7 +526,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #2c3e50;
+    background-color: #22313f;
 }
 
 footer .footer-col {
